@@ -1,0 +1,125 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 1px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('image/bkg1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: transparent !important;
+    border-bottom: none;
+    padding: 15px 20px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: white !important;
+    margin: 0 15px;
+    position: relative;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00;
+    /* Gold color on hover */
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hover Glow Effect */
+.nav-link:hover {
+    text-shadow: 0 0 8px #ffcc00, 0 0 16px #ffcc00;
+}
+
+/* Logo Styling */
+.logo {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Search Button Styling */
+.navbar .btn-search {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.btn-search:hover {
+    background-color: #e6b800;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+    background: transparent;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+.image-section {
+    margin-top: 56px; /* Adjust based on navbar height */
+}
+
+

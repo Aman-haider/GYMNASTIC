@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gymnasium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            background-color: transparent !important;
+            border-bottom: none;
+            padding: 15px 20px;
+        }
+        
+        .navbar-nav {
+            flex-grow: 1;
+            justify-content: center;
+        }
+        
+        .nav-link {
+            font-size: 1.2rem;
+            color: white !important;
+            margin: 0 15px;
+            position: relative;
+            font-size: 1.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #ffcc00;
+            /* Gold color on hover */
+            text-decoration: none;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #ffcc00;
+            left: 50%;
+            bottom: 0;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Hover Glow Effect */
+        .nav-link:hover {
+            text-shadow: 0 0 8px #ffcc00, 0 0 16px #ffcc00;
+        }
+        
+        /* Logo Styling */
+        .logo {
+            height: 60px;
+            width: auto;
+            border: 50%;
+        }
+        
+        /* Search Button Styling */
+        .navbar .btn-search {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            color: black;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+        
+        .btn-search:hover {
+            background-color: #e6b800;
+        }
+        .navbar {
+            background: transparent;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        .navbar-nav {
+            margin: 0 auto;
+        }
+        
+        .nav-link {
+            color: #fff;
+            font-size: 1.2rem;
+            margin: 0 15px;
+        }
+        
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        /* Full-Screen Sections Styling */
+        .section {
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+        }
+        .owners-section {
+            background-image: url('image/bkg1.jpg');
+        }
+        .trainers-section {
+            background-image: url('image/bkg1.jpg');
+        }
+        .services-section {
+            background-image: url('image/bkg1.jpg');
+        }
+
+        /* Cards Styling */
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="image/logo1.png" alt="Gymnasium Logo" class="logo">
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home2.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about1.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact1.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fitness.html">Fitness Calculator</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-flex">
+                <button class="btn btn-primary me-2">Login</button>
+                <button class="btn btn-outline-primary">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Owners Section -->
+    <section class="section owners-section" id="owners">
+        <div class="container">
+            <h1>Meet Our Owners</h1>
+            <p>Passionate fitness enthusiasts dedicated to bringing the best gym experience.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/owner4.jpeg"  width="auto" height="250px" class="card-img-top" alt="Owner 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Shaheer</h5>
+                            <p class="card-text">Founder and CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/owner5.jpeg"  width="auto" height="250px" class="card-img-top" alt="Owner 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Zeeshan</h5>
+                            <p class="card-text">Co-Founder and Fitness Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/owner6.jpeg" width="auto" height="250px" class="card-img-top" alt="Owner 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Waleed</h5>
+                            <p class="card-text">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="section trainers-section" id="trainers">
+        <div class="container">
+            <h1>Our Trainers</h1>
+            <p>Meet our certified trainers ready to help you achieve your fitness goals.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/trainer4.jpeg" class="card-img-top" alt="Trainer 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ali</h5>
+                            <p class="card-text">Personal Trainer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/trainer5.jpeg" class="card-img-top" alt="Trainer 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ahmed</h5>
+                            <p class="card-text">Yoga Instructor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/trainer6.jpeg"  width="auto" height="200px" class="card-img-top" alt="Trainer 2">
+                        <div class="card-body">
+                            <h5 class="card-title">moiz</h5>
+                            <p class="card-text">Yoga Instructor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Explore a variety of fitness services we offer to help you achieve your goals.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/service4.jpg"  width="auto" height="250px" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Training</h5>
+                            <p class="card-text">Get one-on-one training sessions tailored to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/groupclass.avif"  width="auto" height="250px" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Group Classes</h5>
+                            <p class="card-text">Join fun and energetic group classes to stay motivated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card"">
+                        <img src="image/cardio2.jpeg" class="card-img-top" width="auto" height="250px" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cardio Section</h5>
+                            <p class="card-text">Lose Your Fat and Get Fit Today to live your healthy life</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2025 Gymnasium. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
